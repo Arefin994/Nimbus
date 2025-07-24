@@ -6,7 +6,9 @@ plugins {
 android {
     namespace = "com.example.nimbus"
     compileSdk = 36
-
+    buildFeatures {
+        viewBinding = true
+    }
     defaultConfig {
         applicationId = "com.example.nimbus"
         minSdk = 24
@@ -48,4 +50,8 @@ dependencies {
 
     //  lottie animations
     implementation("com.airbnb.android:lottie:6.6.7")
+    // GSON converter
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+// retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
 }
